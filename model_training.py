@@ -5,6 +5,8 @@ from keras.layers import Dense, Conv2D, MaxPooling2D, Flatten, BatchNormalizatio
 from keras.preprocessing import image_dataset_from_directory
 import pickle
 
+os.makedirs('model', exist_ok=True)
+
 # Load the dataset
 train_ds = image_dataset_from_directory(
     "data/train/",
